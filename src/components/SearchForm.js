@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
-export default function SearchForm() {
- 
-  return (
-    <section className="search-form">
-     // Add a search form here
+export default function SearchForm(props) {
+  return(
+    <section>
+      <form>
+        <input 
+          type="text" 
+          placeholder={props.placeHolder} 
+          value={props.searchQuery}
+          onChange={props.handleChange}/>
+      </form>
     </section>
-  );
+  )
 }
