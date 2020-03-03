@@ -11,5 +11,7 @@ export default function SearchForm(props) {
           onChange={props.handleChange}/>
       </form>
     </section>
-  )
+  );
 }
+
+``
